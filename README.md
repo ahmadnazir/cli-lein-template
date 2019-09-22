@@ -1,14 +1,18 @@
 # cli
 
-A Leiningen template for FIXME.
+A Leiningen template for clojure applications that can be executed from the cli.
 
 ## Usage
 
-FIXME
+From the directory, run:
+
+```
+lein new cli app --to-dir /tmp/app
+```
 
 ## License
 
-Copyright © 2019 FIXME
+Copyright © 2019 Ahmad Nazir Raja
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
