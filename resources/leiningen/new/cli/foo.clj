@@ -1,4 +1,4 @@
 (ns {{name}}.foo)
 
-(defn -main []
+(defn -main [& args]
   (println "Hello world!"))
