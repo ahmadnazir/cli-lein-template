@@ -5,7 +5,7 @@
 (def render (renderer "cli"))
 
 (defn cli
-  "FIXME: write documentation"
+  "Generate a clojure application template that compiles to native binary"
   [name]
   (let [data {:name name
               :sanitized (name-to-path name)}]
@@ -13,4 +13,7 @@
     (->files data
              ["src/{{sanitized}}/foo.clj" (render "foo.clj" data)]
              ["project.clj" (render "project.clj" data)]
+             ;; ["Dockerfile" (render "Dockerfile" data)]
+             ["build.sh" (render "build.sh" data)]
+             ["README.md" (render "README.md" data)]
              )))

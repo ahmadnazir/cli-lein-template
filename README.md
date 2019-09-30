@@ -10,6 +10,29 @@ From the directory, run:
 lein new cli app --to-dir /tmp/app
 ```
 
+## Using the template
+
+The bare bones app created for you prints hello world. Once built, a binary is
+created on the project root directory. It runs in ~5 ms as compared to ~850 ms
+when using the JVM.
+
+
+```
+cd PATH_TO_PROJECT                                 # Go to the app created using this template
+
+bash build.sh                                      # Create a native executable
+
+time ./app                                         # Run it!
+                                                   # and get blazing fast run times :)
+```
+
+Output:
+
+```
+Hello world!
+./app  0.00s user 0.00s system 76% cpu 0.004 total
+```
+
 ## License
 
 Copyright © 2019 Ahmad Nazir Raja
