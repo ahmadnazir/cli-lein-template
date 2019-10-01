@@ -11,7 +11,7 @@
               :sanitized (name-to-path name)}]
     (main/info "Generating fresh 'lein new' cli project.")
     (->files data
-             ["src/{{sanitized}}/foo.clj" (render "foo.clj" data)]
+             ["src/{{sanitized}}/core.clj" (render "core.clj" data)]
              ["project.clj" (render "project.clj" data)]
              ;; ["Dockerfile" (render "Dockerfile" data)]
              ["build.sh" (render "build.sh" data)]

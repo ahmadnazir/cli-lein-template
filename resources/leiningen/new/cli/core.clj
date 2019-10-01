@@ -1,4 +1,4 @@
-(ns {{name}}.foo
+(ns {{name}}.core
     (:gen-class))
 
 (defn -main [& args]
