@@ -2,17 +2,23 @@
 
 # cli
 
-A Leiningen template for clojure applications that can be executed from the cli.
+A Leiningen template for clojure applications that can be executed natively from the cli.
 
 ## Usage
 
-From the directory, run:
+[Optional] If you want to install from source:
 
 ```
-lein new cli app --to-dir /tmp/app
+lein install
 ```
 
-## Using the template
+Create a new app:
+
+```
+lein new cli app
+```
+
+### Build Native Executable
 
 The bare bones app created for you prints hello world. Once built, a binary is
 created on the project root directory. It runs in ~5 ms as compared to ~850 ms
@@ -20,10 +26,8 @@ when using the JVM.
 
 
 ```
-cd PATH_TO_PROJECT                                 # Go to the app created using this template
-
+cd app
 bash build.sh                                      # Create a native executable
-
 time ./app                                         # Run it!
                                                    # and get blazing fast run times :)
 ```
