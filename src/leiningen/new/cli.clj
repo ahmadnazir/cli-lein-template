@@ -16,4 +16,5 @@
              ;; ["Dockerfile" (render "Dockerfile" data)]
              ["build.sh" (render "build.sh" data)]
              ["README.md" (render "README.md" data)]
+             ["HIBT.md" (render "HIBT.md" data)]
              )))
