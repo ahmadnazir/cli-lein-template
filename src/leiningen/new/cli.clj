@@ -13,6 +13,7 @@
     (->files data
              ["src/{{sanitized}}/core.clj" (render "core.clj" data)]
              ["project.clj" (render "project.clj" data)]
+             [".gitignore" (render ".gitignore" data)]
              ;; ["Dockerfile" (render "Dockerfile" data)]
              ["build.sh" (render "build.sh" data)]
              ["README.md" (render "README.md" data)]
