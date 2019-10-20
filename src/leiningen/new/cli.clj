@@ -12,6 +12,7 @@
     (main/info "Generating fresh 'lein new' cli project.")
     (->files data
              ["src/{{sanitized}}/core.clj" (render "core.clj" data)]
+             ["src/{{sanitized}}/stream.clj" (render "stream.clj" data)]
              ["project.clj" (render "project.clj" data)]
              [".gitignore" (render "gitignore" data)]
              ;; ["Dockerfile" (render "Dockerfile" data)]

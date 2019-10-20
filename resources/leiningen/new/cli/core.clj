@@ -1,16 +1,18 @@
 (ns {{name}}.core
+    (:require [{{name}}.stream :as stream])
     (:gen-class))
 
-(defn handle [line]
-  (println (str " :: " line)))
+(defn parse-args [args]
+  (println "Arguments are ignored: " args))
+
+(defn parse-line [line]
+  (str " :: " line))
+
+(defn print-line [line]
+  (->> line
+       parse-line
+       println))
 
 (defn -main [& args]
-  (loop [
-         lines (line-seq (java.io.BufferedReader. *in*))
-         ]
-    (let [line (first lines)]
-      (cond line (do
-                   (handle line)
-                   (recur (rest lines)))
-            :else (println "Done!"))
-      )))
+  (let [index (parse-args args)]
+    (stream/mapper *in* print-line)))
