@@ -18,6 +18,12 @@ Create a new app:
 lein new cli app
 ```
 
+or use clj tools:
+
+```
+clj -A:new cli yourname.app
+```
+
 ### Build Native Executable
 
 The bare bones app created for you prints hello world. Once built, a binary is
