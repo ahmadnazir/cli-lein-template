@@ -21,7 +21,7 @@ lein new cli app
 or use clj tools:
 
 ```
-clj -A:new cli yourname.app
+clj -A:new cli yourname/app
 ```
 
 ### Build Native Executable
